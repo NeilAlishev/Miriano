@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - rentsite@localhost" uuid="1207d915-669d-4ce7-8eac-6ccbc74a61be">
+      <secret-storage>master_key</secret-storage>
+      <user-name>neil</user-name>
+      <schema-pattern>rentsite.pg_catalog rentsite.public</schema-pattern>
+      <default-schemas>rentsite.public</default-schemas>
+    </data-source>
+  </component>
+</project>

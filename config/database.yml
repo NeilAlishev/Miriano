@@ -1,0 +1,22 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: neil
+  password:
+
+development:
+  <<: *default
+  database: rentsite
+
+test:
+  <<: *default
+  database: rentsite_test
+
+
+production:
+  <<: *default
+  database: rentsite_production
+  username: neil
+  password: <%= ENV['SITE_DATABASE_PASSWORD'] %>
