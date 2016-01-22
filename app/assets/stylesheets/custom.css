@@ -1,0 +1,25 @@
+.container-fluid{
+    position:relative;
+    top:100px;
+    padding-bottom:100px;
+}
+
+body{
+    background-color: rgba(248, 248, 248, 0.6);
+}
+
+.navbar-fixed-top{
+    background: #ffedea; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ffedea, rgba(248, 248, 248, 0.6)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffedea, rgba(248, 248, 248, 0.6)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffedea, rgba(248, 248, 248, 0.6)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffedea, rgba(248, 248, 248, 0.6)); /* Standard syntax (must be last) */
+}
+
+.navbar-fixed-bottom{
+    background: #ffedea; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(248, 248, 248, 0.6), #ffedea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(248, 248, 248, 0.6), #ffedea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(248, 248, 248, 0.6), #ffedea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(248, 248, 248, 0.6), #ffedea); /* Standard syntax (must be last) */
+}

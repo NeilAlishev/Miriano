@@ -7,5 +7,17 @@
       <schema-pattern>rentsite.pg_catalog rentsite.public</schema-pattern>
       <default-schemas>rentsite.public</default-schemas>
     </data-source>
+    <data-source name="Rails Site: development" uuid="5ec2ee7a-0182-4696-8e9a-d8d4ee9b9659">
+      <user-name>neil</user-name>
+      <schema-pattern>rentsite.pg_catalog rentsite.public</schema-pattern>
+      <default-schemas>rentsite.public</default-schemas>
+    </data-source>
+    <data-source name="Rails Site: test" uuid="8f14da68-3d38-4634-8450-e37919510495">
+      <user-name>neil</user-name>
+    </data-source>
+    <data-source name="Rails Site: production" uuid="f734bcda-eeea-4210-9c83-f7480c691470">
+      <user-name>neil</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddff9dfe3dffedfefdff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
   </component>
 </project>
