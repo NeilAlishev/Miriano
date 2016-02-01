@@ -26,7 +26,7 @@
 
       <div class="field" id="passport-field">
         <%= f.label :passport_number, '3 последние цифры номера паспорта' %> <br/>
-        <%= f.text_field :passport_number, class: 'form-control', value: '', placeholder: 'Введите последние три цифры номера паспорта' %>
+        <%= f.text_field :passport_number, class: 'form-control', value: '', placeholder: '_ _ _' %>
         <%= link_to 'Зачем это надо?', '', style: 'float:right;', data: {toggle: 'modal', target: '#myModal'}, id:'why' %>
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
