@@ -1,0 +1,42 @@
+.container-fluid {
+  position: relative;
+  top: 50px;
+  padding-bottom: 100px;
+}
+
+.page-scroll {
+  color: cornflowerblue;
+}
+
+#searchHome {
+  background-color: #627ad0;
+}
+
+#searchHome :hover {
+  background-color: transparent;
+}
+
+.forms {
+  width: 600px;
+  margin: auto;
+
+  .field {
+    margin: 10px;
+  }
+  h2 {
+    text-align: center;
+  }
+
+}
+
+#passport-field {
+  display: none;
+}
+
+#why{
+  color:indianred;
+}
+
+a:hover{
+  color:darkblue;
+}
