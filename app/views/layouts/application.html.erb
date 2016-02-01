@@ -12,12 +12,12 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <title><%= yield(:title) %> | Название сайта</title>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'logo.png' %>
   <%= render 'layouts/shim' %>
 </head>
 <body>
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
-
 <%= render 'layouts/header' %>
 <div class="container-fluid">
   <%= yield %>

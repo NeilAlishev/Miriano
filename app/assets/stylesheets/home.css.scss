@@ -7,6 +7,16 @@
   background-image: url(image-path('geometry2.png'));
 }
 
+#how-it-works {
+  color: #7d40c4;
+  background-color: white;
+  &:hover {
+    background-color: whitesmoke;
+  }
+}
+
+
+
 
 
 

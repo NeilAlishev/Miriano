@@ -1,4 +1,5 @@
 <div class="forms">
+  <%= image_tag 'seller.png', class: 'seller-logo' %>
   <h2>Войти</h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -20,7 +21,7 @@
       <% end -%>
 
       <div class="actions" style="margin-top:30px;">
-        <%= f.submit 'Войти', class: "btn btn-md btn-primary btn-block", type: "submit"%>
+        <%= f.submit 'Войти', class: "btn btn-md btn-custom-violet btn-block", type: "submit" %>
       </div>
   <% end %>
 

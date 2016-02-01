@@ -33,18 +33,40 @@
   display: none;
 }
 
-#why{
-  color:indianred;
+#why {
+  color: indianred;
 }
 
-a:hover{
-  color:darkblue;
+a:hover {
+  color: darkblue;
 }
 
-#logo{
-  position:absolute;
-  top:3px;
-  left:20px;
-  height:45px;
-  width:45px;
+#logo {
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  height: 45px;
+  width: 45px;
+}
+
+.navbar-static-bottom {
+  z-index: 9999;
+  position: relative;
+}
+
+.btn-custom-violet {
+  background-color: #7d40c4;
+  color: white;
+  &:hover {
+    color: white;
+    background-color: #6638a5;
+  }
+}
+
+.seller-logo {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
