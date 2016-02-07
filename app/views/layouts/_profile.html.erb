@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <%= image_tag 'gray.png', class: 'img-circle img-profile' %>
+  <span style="font-size: 350%; font-family: helvetica, sans-serif; margin-left: 50px;">
+      <%= @user.first_name %> <%= @user.second_name %>
+    </span>
+  </br>
+  <nav class="navbar navbar-default col-md-6 navbar-profile">
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><%=link_to 'Мои объявления', '#', style:'color: #7d40c4;'%></li>
+        <li><%=link_to 'Редактировать профиль', edit_user_registration_path , style:'color: #7d40c4;'%></li>
+        <li><%=link_to 'Что-нибудь', '#', style:'color: #7d40c4;'%></li>
+        <li><%=link_to 'Что-нибудь', '#', style:'color: #7d40c4;'%></li>
+        <li><%=link_to 'Что-нибудь', '#', style:'color: #7d40c4;'%></li>
+      </ul>
+    </div>
+  </nav>
+</div>

@@ -43,10 +43,10 @@ a:hover {
 
 #logo {
   position: absolute;
-  top: 3px;
-  left: 20px;
-  height: 45px;
-  width: 45px;
+  top: 0;
+  left: 15px;
+  height: 50px;
+  width: 50px;
 }
 
 .navbar-static-bottom {
@@ -64,9 +64,29 @@ a:hover {
 }
 
 .seller-logo {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   display: block;
   margin-left: auto;
   margin-right: auto
+}
+
+.passport-logo {
+  height: 100px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.why-pic {
+  width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+.img-profile {
+  width: 200px;
+  height: 200px;
 }

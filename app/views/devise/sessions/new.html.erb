@@ -1,4 +1,8 @@
 <div class="forms">
+  <%flash.each do |message_type, message|%>
+    <div class='alert alert-<%=message_type%>'><%=message%></div>
+  <%end%>
+
   <%= image_tag 'seller.png', class: 'seller-logo' %>
   <h2>Войти</h2>
 

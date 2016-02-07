@@ -1,0 +1,17 @@
+<div class="forms">
+
+  <div class="alert alert-info"><%= flash[:info] %></div>
+
+  <%= image_tag 'passport.png', class: 'passport-logo' %>
+  <%= form_for :user, class: 'form-signin' do |f| %>
+      <%= f.label :passport_number, '3 последние цифры паспорта' %>
+      <%= f.text_field :passport_number, class: 'form-control', placeholder: '_ _ _', autofocus: true %>
+      <%= link_to 'Зачем это надо?', '', style: 'float:right;', data: {toggle: 'modal', target: '#myModal'}, id: 'why' %>
+      <br/>
+      <%= render 'shared/why' %>
+      <br/>
+      <div class="actions">
+        <%= f.submit 'Отправить', class: "btn btn-md btn-custom-violet btn-block", type: "submit" %>
+      </div>
+  <% end %>
+</div>

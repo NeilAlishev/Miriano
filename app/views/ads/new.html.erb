@@ -1,0 +1,34 @@
+<div class="forms">
+  <%flash.each do |message_type, message| %>
+      <div class="alert alert-<%= message_type %>"><%= message %></div>
+  <% end %>
+  <%= image_tag 'объявление.jpg', class: 'seller-logo' %>
+  <h2>Разместить объявление</h2>
+
+  <%= form_for @ad do |f| %>
+      <div class="field">
+        <%= f.label :title, 'Заголовок' %><br/>
+        <%= f.text_field :title, autofocus: true, class: 'form-control' %>
+      </div>
+      <div class="field">
+        <%= f.label :content, 'Содержание объявления' %><br/>
+        <%= f.text_area :content, class: 'form-control' %>
+      </div>
+      <div class="field">
+        <%= f.label :city, 'Город' %><br/>
+        <%= f.text_field :city, class: 'form-control' %>
+      </div>
+      <div class="field">
+        <%= f.label :address, 'Адрес' %><br/>
+        <%= f.text_field :address, class: 'form-control' %>
+      </div>
+      <div class="field">
+        <%= f.label :price, 'Цена' %><br/>
+        <%= f.text_field :price, class: 'form-control' %>
+      </div>
+
+      <div class="actions" style="margin-top:30px;">
+        <%= f.submit 'Разместить', class: "btn btn-md btn-custom-violet btn-block", type: "submit" %>
+      </div>
+  <% end %>
+</div>

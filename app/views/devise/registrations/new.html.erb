@@ -27,22 +27,14 @@
       <div class="field" id="passport-field">
         <%= f.label :passport_number, '3 последние цифры номера паспорта' %> <br/>
         <%= f.text_field :passport_number, class: 'form-control', value: '', placeholder: '_ _ _' %>
+        <br />
+        <%= f.label :passport_number, '3 последние цифры прошлого паспорта, если теряли его и
+        жилье зарегистрировано на него (Данные о номере старого паспорта находятся на 19 странице вашего
+        текущего паспорта)', style:'color:gray;' %> <br/>
+        <%= f.text_field :passport_number, class: 'form-control', value: '', placeholder: '_ _ _' %>
         <%= link_to 'Зачем это надо?', '', style: 'float:right;', data: {toggle: 'modal', target: '#myModal'}, id:'why' %>
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Зачем нам нужны ваши последние три цифры паспорта?</h4>
-              </div>
-              <div class="modal-body">
-                Здесь надо будет объяснить людям зачем надо вводить последние три цифры паспорта, Шахриер
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <br/>
+        <%=render 'shared/why'%>
       </div>
 
       <div class="field">
@@ -58,7 +50,7 @@
       <div class="field">
         <%= f.label :password, 'Пароль' %>
         <% if @minimum_password_length %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <em>(<%= @minimum_password_length %> символов минимум)</em>
         <% end %><br/>
         <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
       </div>

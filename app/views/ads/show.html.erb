@@ -1,0 +1,6 @@
+<h1><%=@ad.title%><br/></h1>
+<p><%=@ad.content%></p>
+<%=@ad.city%><br/>
+<%=@ad.price%><br/>
+Автор: <%=@ad.user.email%><br/>
+<%=time_ago_in_words (@ad.created_at)%> ago
