@@ -56239,8 +56239,8 @@ umserver</columns>
       <schema id="2" parent="1" name="public">
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
-        <introspection-state-number>2074</introspection-state-number>
-        <introspection-timestamp>2016-02-07.21:53:53.846</introspection-timestamp>
+        <introspection-state-number>2114</introspection-state-number>
+        <introspection-timestamp>2016-02-14.18:26:30.212</introspection-timestamp>
       </schema>
       <schema id="3" parent="1" name="pg_catalog">
         <object-id>11</object-id>
@@ -56274,7 +56274,7 @@ umserver</columns>
       </table>
       <table id="10" parent="2" name="users">
         <object-id>16872</object-id>
-        <state-number>2074</state-number>
+        <state-number>2114</state-number>
       </table>
       <table id="11" parent="3" name="pg_aggregate">
         <object-id>2600</object-id>
@@ -76275,7 +76275,6 @@ umserver</columns>
       </key>
       <foreign-key id="3562" parent="7" name="fk_rails_400d8fa7ce">
         <columns>user_id</columns>
-        <ref-key>~.users.users_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
@@ -76331,7 +76330,6 @@ umserver</columns>
       </key>
       <foreign-key id="3573" parent="8" name="fk_rails_03de2dc08c">
         <columns>user_id</columns>
-        <ref-key>~.users.users_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
@@ -76437,7 +76435,7 @@ umserver</columns>
         <data-type>boolean</data-type>
       </column>
       <column id="3595" parent="10" name="admin">
-        <state-number>2074</state-number>
+        <state-number>2114</state-number>
         <data-type>boolean</data-type>
         <default-expression>false</default-expression>
       </column>

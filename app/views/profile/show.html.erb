@@ -2,7 +2,7 @@
 <br/>
 <div class="row medium-8 large-7 columns">
   <% @ads.each do |ad| %>
-      <h3><%=link_to ad.title, ad%> <small><%=ad.created_at.strftime("%d %B | %I:%M %p")%></h3>
+      <h3><%=link_to ad.title, ad%> <small><%=Russian::strftime(ad.created_at.to_time, "%d %B | %I:%M %p")%></small></h3>
       <p><%=ad.content%> </p>
       Город: <%=ad.city%> <br/>
       Цена: <%=ad.price%> <br/>

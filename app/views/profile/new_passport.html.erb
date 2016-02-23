@@ -6,6 +6,12 @@
   <%= form_for :user, class: 'form-signin' do |f| %>
       <%= f.label :passport_number, '3 последние цифры паспорта' %>
       <%= f.text_field :passport_number, class: 'form-control', placeholder: '_ _ _', autofocus: true %>
+      <br />
+      <%= f.label :passport_number, '3 последние цифры прошлого паспорта, если теряли его и
+        жилье зарегистрировано на него (Данные о номере старого паспорта находятся на 19 странице вашего
+        текущего паспорта)', style:'color:gray;' %> <br/>
+      <%= f.text_field :passport_number, class: 'form-control', value: '', placeholder: '_ _ _' %>
+      <br/>
       <%= link_to 'Зачем это надо?', '', style: 'float:right;', data: {toggle: 'modal', target: '#myModal'}, id: 'why' %>
       <br/>
       <%= render 'shared/why' %>

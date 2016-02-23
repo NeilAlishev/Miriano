@@ -2,13 +2,16 @@
     <div class="alert alert-<%= message_type %>"><%= message %></div>
 <% end %>
 
-<div class="row medium-8 large-7 columns">
-<% @ads.each do |ad| %>
-<h3><%=link_to ad.title, ad%> <small><%=ad.created_at.strftime("%d %B | %I:%M %p")%></h3>
-    <p><%=ad.content%> </p>
-    Город: <%=ad.city%> <br/>
-    Цена: <%=ad.price%> <br/>
-    Продавец: <%=ad.user.email%>
-<%end%>
+<div class="ads">
+  <% @ads.each do |ad| %>
+      <hr/>
+      <div class="ad">
+      <h2><%=link_to ad.title, ad%> <small><%=Russian::strftime(ad.created_at.to_time, "%a, %d %b %Y, %H:%M")%></small></h2>
+      <strong><%=ad.price%> руб.</strong> <br/>
+      <%=ad.city%>, Адрес:
+        <%=ad.address%><br/>
+        <span style="float:right; color:gray;">Разместил: <%=ad.user.login%></span>
+      </div>
+  <%end%>
 </div>
 

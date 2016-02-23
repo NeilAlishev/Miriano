@@ -1,6 +1,6 @@
 .header {
   width: 90%;
-  margin: auto;
+  margin: 10px auto 150px auto;
   text-align: center;
   border: thin solid deepskyblue;
   padding: 50px;
@@ -13,6 +13,10 @@
   &:hover {
     background-color: whitesmoke;
   }
+}
+
+.main{
+
 }
 
 

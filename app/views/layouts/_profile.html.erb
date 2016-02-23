@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <%= image_tag 'gray.png', class: 'img-circle img-profile' %>
+  <%= image_tag @user.image.url(:thumb), class: 'img-circle img-profile' %>
   <span style="font-size: 350%; font-family: helvetica, sans-serif; margin-left: 50px;">
       <%= @user.first_name %> <%= @user.second_name %>
     </span>
